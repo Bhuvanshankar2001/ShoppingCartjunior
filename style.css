@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    max-width: 100%;
+    /* position: fixed; */
+}
+.nav #inp{
+    width: 300px;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+.center-img{
+    height: 50%;
+    width: 100%;
+    content: "Shop now ";
+}
+.main{
+    width: 100%;
+}
+.heading{
+    /* position: relative; */
+    text-align: center;
+    border: 2px solid black;
+}
+.galary img{
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+
+}
+/* button{
+    background-color: gold;
+    color: black;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 60px;
+} */
+.galary{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    vertical-align: top;
+    width: 100%;
+    /* background-color: silver; */   
+}
+
+.galary img:hover{
+    transform: scale(1.2);
+}
+@media only screen and (max-width: 600px){
+    .galary{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .nav p{
+        padding: 2px;
+    }
+}
+.foot{
+    margin-top: 40px;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+}
